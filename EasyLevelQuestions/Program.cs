@@ -94,6 +94,84 @@
         //Console.WriteLine($"Tam sayı dizinisdeki en büyük ve en küçük değer sırasyıla {maxVal} ve {minVal}.");
 
         #endregion
+        #region Negatif olmayan bir tamsayının faktöriyelini hesaplayın.  
+
+        //Console.Write("Faktöriyelini öğrenmek istediğiniz sayıyı giriniz: ");
+        //int inputVal=Convert.ToInt32(Console.ReadLine());
+
+        //int result = 1;
+
+        //if (inputVal < 0)
+        //    Console.WriteLine("\nGirmiş olduğunuz sayı geçerli değildir");
+        //else
+        //    for (int i = inputVal; i > 0; i--)
+        //        result *= i;
+
+        //Console.WriteLine($"\nGirmiş olduğunuz sayının faktöriyeli: {result}");
+
+        #endregion
+        #region Bir tamsayı dizisinde yinelenen (duplicate) eleman olup olmadığını kontrol edin. 
+
+        //int[] numbers = { 1, 2, 3, 4, 2 };
+
+        //bool repeatingNumber = numbers.Distinct().Count() != numbers.Length;
+
+        //Console.WriteLine(repeatingNumber); 
+
+
+        #endregion
+        #region Verilen bir dizgedeki sesli harflerin (a, e, ı, i, o, ö, u, ü) sayısını bulun.  
+
+        //Console.Write("Lütfen sesli harfleri kontrol etmek istediğiniz metni giriniz: ");
+        //string? text = Console.ReadLine();
+
+        //int vowelCounter = 0;
+
+        //char[] vowels = {'A','E','I','İ','O','Ö','U','Ü',
+        //                 'a','e','ı','i','o','ö','u','ü'};
+
+        //foreach (var item in text)
+        //{
+        //    if (vowels.Contains(item))
+        //        vowelCounter++;
+        //}
+
+        //Console.WriteLine($"Girilen metindeki sesli harf sayısı: {vowelCounter}");
+
+        #endregion
+        #region Yerleşik ters çevirme (Reverse) yöntemlerini kullanmadan bir dizgeyi tersine döndürün.
+
+        //Console.Write("Ters çevirmek istediğiniz metni girin: ");
+        //string? text = Console.ReadLine();
+
+        //string reversed = "";
+
+        //for (int i = text.Length - 1; i >= 0; i--)
+        //{
+        //    reversed += text[i];  
+        //}
+
+        //Console.WriteLine("Ters çevrilmiş hali: " + reversed);
+
+        #endregion
+        #region 1’den N’ye kadar sayıları yazdırın; 3’ün katları için “Fizz”, 5’in katları için “Buzz”, her ikisinin katıysa “FizzBuzz” yazdırın.  
+
+        Console.Write("Tavan sayıyı giriniz: ");
+        int maxVal = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= maxVal; i++)
+        {
+            if (i % 15 == 0)
+                Console.WriteLine("FizzBuzz");
+            else if (i % 3 == 0)
+                Console.WriteLine("Fizz");
+            else if (i % 5 == 0)
+                Console.WriteLine("Buzz");
+            else
+                Console.WriteLine(i);
+        }
+
+        #endregion
         Console.ReadLine();
     }
 }
